@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title> Tyler's Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1 class="title has-text-centered notification is-warning"> Tyler's Weather Dashboard</h1>
+    </header>
+    <main>
+        <section class="columns">
+            <div class="control column is-3 block mt-5 ml-3">
+                <h2 class="subtitle block has-text-weight-bold has-text-warning">Search for a City:</h2>
+                <input id="input-area" class="input is-focused block" type="text" placeholder="Enter City Name">
+                <button class="button has-text-danger block has-text-weight-bold" id="search-button">Search</button>
+                <hr class="dropdown-divider">
+                <div id="search-history"></div>
+            </div>
+            <body class="has-background-link"></body>
+            <div class="column is-9 block mt-5 mr-3" id="div-today-weather">
+                <article class="tile is-child notification is-light">
+                <p class="title" id="city-name">City Name</p>
+                    <div class="content">
+                        <p class="subtitle" id="current-temp">Temperature:</p>
+                        <p class="subtitle" id="current-wind">Wind:</p>
+                        <p class="subtitle" id="current-hum">Humidity:</p>
+                    </div>
+                </article>
+                </div>
+            </div>
+        </section>
+        <section class="" id="sec-five-day-forecast">
+            <h3 class="title has-text-centered has-text-warning has-text-weight-bold">5-Day Forecast</h3>
+            <div class="columns block is-flex is-justify-content-center">
+                <div class="block m-2 column is-2 notification is-primary" id="day-1">
+        
+                </div>
+                <div class="block m-2 column is-2 notification is-primary" id="day-2">
+
+                </div>
+                <div class="block m-2 column is-2 notification is-primary" id="day-3">
+
+                </div>
+                <div class="block m-2 column is-2 notification is-primary" id="day-4">
+
+                </div>
+                <div class="block m-2 column is-2 notification is-primary" id="day-5">
+
+                </div>
+            </div>
+        </section>
+    </main>
+  <!-- Create -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
+
+</body>
+</html>
